@@ -4,20 +4,62 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MyTunes</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style>
+        @media (min-width: 1024px){
+            #menu-icon {
+                display: none;
+            }
+        }
+    </style>
 </head>
 <body>
+    <!-- header -->
     <header class="bg-[#270082] h-[120px] flex items-center">
         <nav class="flex text-white justify-between px-20 w-full">
-            <h1 class="text-5xl font-semibold">myTunes</h1>
-            <ul class="flex gap-18 text-2xl font-sans">
+            <h1 class="text-3xl font-semibold md:text-5xl">myTunes</h1>
+            <ul class="hidden lg:flex gap-18 text-2xl font-sans">
                 <li><a href="">Overview</a></li>
                 <li><a href="">Music</a></li>
                 <li><a href="">Video</a></li>
                 <li><a href="">Gitf Cards</a></li>
             </ul>
+            <i class="fa-solid fa-bars text-3xl cursor-pointer" id="menu-icon"></i>
         </nav>
     </header>
+    <!-- header completed -->
+
+    <!-- main -->
+     <main>
+        <section class="relative w-full h-[400px] md:h-250 bg-cover bg-center bg-no-repeat"
+             style="background-image: url('https://mytunes-322.web.app/images/hero_image.png');">
+        
+            <div class="absolute inset-0 bg-black/50 flex flex-col items-center justify-center text-white text-center px-10 gap-y-6 md:gap-y-12 lg:px-80">
+                <h2 class="text-5xl md:text-9xl mb-4">myTunes</h2>
+                <p class="text-3xl md:text-5xl">
+                Your music, movies, and TV shows take centre stage.
+                </p>
+                <p class="text-xl md:text-3xl font-thin">muTunes is the best way to organize and enjoy the music, movies, and TV shows you already have -
+                and shop for the once you want. Enjoy all the entertainment myTunes has to offer on your Mac and PC.</p>
+            </div>
+        </section>
+
+            <!-- next section -->
+        <section class="bg-[#281154] w-full py-40 text-white font-bold flex flex-col justify-center mb-6 items-center px-10 inset-0 text-center gap-y-9 lg:px-80">
+                <p class="text-3xl md:text-3xl">
+                45 million songs. Zero ads.
+                </p>
+                <p class="text-xl font-semibold">
+                    Stream over 45 million songs, Or download albums and tracks to listen offline. All the music in your personal
+                    myTunes library-no matter where it came from-live right alongside the Orange music catelog. Start your free three
+                    month trail with no commitment, and cancel anytime
+                </p>
+                <button>
+                    
+                </button>
+        </section>
+     </main>
 </body>
 </html>
 
